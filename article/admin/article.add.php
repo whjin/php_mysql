@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>文章添加界面</title>
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>文章添加界面</title>
     <style>
         body {
             margin-left: 0;
@@ -12,35 +12,29 @@
             margin-right: 0;
             margin-bottom: 0;
         }
-
-        table {
-            height: 520px;
-        }
     </style>
 </head>
 <body>
-<table width="100%" border="0" cellpadding="8" cellspacing="1" bgcolor="#000">
+<table width="100%" height="520" border="0" cellpadding="8" cellspacing="1" bgcolor="#000000">
     <tr>
-        <td width="89" colspan="2" bgcolor="#ff9"><strong>后台管理系统</strong></td>
+        <td height="89" colspan="2" bgcolor="#ffff99"><strong>后台管理系统</strong></td>
     </tr>
     <tr>
-        <td width="156" height="287" align="left" valign="top" bgcolor="#ff9">
-            <p><a href="aritcle.add.php">发布文章</a></p>
+        <td width="156" height="287" align="left" valign="top" bgcolor="#ffff99">
+            <p><a href="article.add.php">发布文章</a></p>
             <p><a href="article.manage.php">管理文章</a></p>
-            <a href="aritcle.add.php"></a>
+            <a href="article.add.php"></a>
         </td>
-        <td width="837" valign="top" bgcolor="#fff">
-            <form action="aritcle.add.handle.php" id="form1" name="form1" method="post">
+        <td width="837" valign="top" bgcolor="#ffffff">
+            <form id="form1" name="form1" method="post" action="article.add.handle.php">
                 <table width="779" border="0" cellpadding="8" cellspacing="1">
                     <tr>
                         <td colspan="2" align="center">发布文章</td>
                     </tr>
                     <tr>
                         <td width="119">标题</td>
-                        <td width="625">
-                            <label for="title"></label>
-                            <input type="text" name="title" id="title">
-                        </td>
+                        <td width="625"><label for="title"></label>
+                            <input type="text" name="title" id="title"></td>
                     </tr>
                     <tr>
                         <td>作者</td>
@@ -48,10 +42,8 @@
                     </tr>
                     <tr>
                         <td>简介</td>
-                        <td>
-                            <label for="description"></label>
-                            <textarea name="description" id="description" cols="60" rows="5"></textarea>
-                        </td>
+                        <td><label for="description"></label>
+                            <textarea name="description" id="description" cols="60" rows="5"></textarea></td>
                     </tr>
                     <tr>
                         <td>内容</td>
@@ -59,15 +51,14 @@
                     </tr>
                     <tr>
                         <td colspan="2" align="right">
-                            <input type="submit" name="button" id="button" value="提交">
-                        </td>
+                            <input type="submit" name="button" id="button" value="提交"></td>
                     </tr>
                 </table>
             </form>
         </td>
     </tr>
     <tr>
-        <td colspan="2" bgcolor="#ff9"><strong>版权所有</strong></td>
+        <td colspan="2" bgcolor="#ffff99"><strong>版权所有</strong></td>
     </tr>
 </table>
 </body>
